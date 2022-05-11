@@ -11,7 +11,7 @@ credentials for Sunny Portal and the
 1. Clone or download the repository.
 2. Enter the directory and run: 
     ```set PYTHONPATH=[CURRENT FOLDER] ```
-    , next line ```python /bin/sunnyportal2pvoutput.py --dry-run sunnyportal.config```
+    , next line ```python bin/sunnyportal2pvoutput.py --dry-run sunnyportal.config```
 3. Enter the requested information and verify that the script is able to connect to Sunny Portal.
 4. The information is saved in sunnyportal.config and can be edited/deleted if you misstype anything.
 5. Once it works, replace --dry-run with e.g. --output to upload the last seven days output data to pvoutput or --status to upload data for the current day.
@@ -51,7 +51,7 @@ for Sunny Portal. It will extract the fields (min, mean and max production) whic
 1. Clone or download the repository.
 2. Enter the directory and run:
     ```set PYTHONPATH=[CURRENT FOLDER] ```
-    , next line ```python /bin/sunnyportal2file.py sunnyportal.config --format csv``` (change --format if you prefer a different format)
+    , next line ```python bin/sunnyportal2file.py sunnyportal.config --format csv``` (change --format if you prefer a different format)
 3. Enter the requested information and verify that a file was created with the format you specified with the expected content
 4. Once it works, you can specify a different start date with --start-date, and end date with --end-date (both defaults to yesterday)
 5. If a data file already exists, it will only download new data and append to previously created data file (can override --start-date)
